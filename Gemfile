@@ -51,3 +51,6 @@ group :development, :test do
 # Add Gems End
 end
 
+group :development do
+  gem 'rails-erd'
+end
