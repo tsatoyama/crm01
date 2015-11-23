@@ -8,8 +8,14 @@ class CustomersController < ApplicationController
 
   def create
     @customer = Customer.new(customer_params)
-    @customer.save
-    redirect_to @customer
+    # @customer.save
+    # redirect_to @customer
+    if @customer.save == true then
+      redirect_to @customer
+    else
+      render :new
+    end
+
 
     # redirect_to @customerの場合、以下と同じ挙動になる模様
     # redirect_to "/customers/#{@customer.id}"
