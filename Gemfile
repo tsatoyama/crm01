@@ -45,5 +45,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+# Add Gems Start
+  gem 'faker'              # 本物っぽいテストデータの作成
+  gem 'faker-japanese'     # 本物っぽいテストデータの作成（日本語対応）
+# Add Gems End
 end
 
