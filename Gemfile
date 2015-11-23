@@ -48,6 +48,7 @@ group :development, :test do
 # Add Gems Start
   gem 'faker'              # 本物っぽいテストデータの作成
   gem 'faker-japanese'     # 本物っぽいテストデータの作成（日本語対応）
+  gem 'devise'
 # Add Gems End
 end
 
