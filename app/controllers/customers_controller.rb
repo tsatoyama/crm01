@@ -1,5 +1,6 @@
 class CustomersController < ApplicationController
   def index
+    @customers = Customer.all
   end
 
   def new
@@ -15,7 +16,6 @@ class CustomersController < ApplicationController
     else
       render :new
     end
-
 
     # redirect_to @customerの場合、以下と同じ挙動になる模様
     # redirect_to "/customers/#{@customer.id}"
