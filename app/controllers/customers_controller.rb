@@ -1,7 +1,8 @@
 class CustomersController < ApplicationController
 
 # Add before_action　Start
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   before_action :set_customer, only: [:show, :edit, :update, :destroy]
 
   def set_customer
